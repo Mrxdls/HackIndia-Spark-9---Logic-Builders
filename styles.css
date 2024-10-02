@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #121212, #1a1a1a); /* Gradient background */
+    color: #ffffff;
+    line-height: 1.8; /* Increased line-height for readability */
+}
+
+header {
+    background: linear-gradient(90deg, #4CAF50, #1a1a1a);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #4CAF50; /* Thicker bottom border */
+}
+
+header h1 {
+    font-size: 3.5em; /* Larger header size */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Increased spacing */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em; /* Increased font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #4CAF50; /* Hover color change */
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+main {
+    padding: 30px;
+}
+
+/* Page Styling */
+.page {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px; 
+    background: #282828; 
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
+}
+
+/* Health Metric Styles */
+.health-metric {
+    background: #3a3a3a; /* Card background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px; /* Space between metrics */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Card shadow */
+    text-align: center; /* Center align text */
+}
+
+.health-metric h4 {
+    color: #4CAF50; /* Header color */
+    font-size: 2em; /* Increased size */
+}
+
+.health-metric p {
+    font-size: 1.5em; /* Increased value font size */
+    margin: 10px 0; /* Space around value */
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    margin: 20px 0;               
+}
+
+.responsive-img {
+    width: 150px;                 
+    height: auto;                 
+    border-radius: 50%;           
+    border: 5px solid #f5c042;    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s;   
+}
+
+.responsive-img:hover {
+    transform: scale(1.1);        
+}
+
+h2 {
+    font-size: 3em; /* Increased size for section headers */
+    margin-bottom: 20px; 
+    color: #4CAF50; 
+    text-align: center; /* Centered headers */
+}
+
+h3 {
+    font-size: 2em; /* Larger sub-headers */
+    margin-bottom: 15px; 
+    color: #f5c042; /* Gold color for sub-headers */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+h4 {
+    font-size: 1.6em; /* Smaller headers */
+    margin-bottom: 10px; 
+    color: #ffffff;
+}
+
+/* Card Styles */
+.card {
+    background: #3a3a3a; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Deeper shadow for cards */
+    transition: transform 0.3s; /* Card hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Button Styles */
+.button {
+    background-color: #4CAF50; 
+    color: #ffffff;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 1.4em; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background change */
+}
+
+.button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.2em; 
+    color: #f5c042; /* Footer text color */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; 
+    }
+    
+    nav a {
+        font-size: 1.1em; /* Smaller nav link size */
+    }
+    
+    .page {
+        padding: 15px; 
+    }
+
+    h2 {
+        font-size: 2.5em; /* Smaller section header */
+    }
+
+    h3 {
+        font-size: 1.8em; /* Smaller sub-header */
+    }
+
+    .button {
+        padding: 10px 20px; /* Smaller button padding */
+        font-size: 1em; /* Smaller button font size */
+    }
+}
