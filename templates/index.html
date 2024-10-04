@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Health Monitoring System - Home</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Driver Health Monitoring System</h1>
+        <nav>
+            <ul>
+                <li><a href="/templates/index.html">Home</a></li>
+                <li><a href="/templates/profile.html">Profile</a></li>
+                <li><a href="/templates/vehicle-info.html">Vehicle Info</a></li>
+                <li><a href="/templates/preferences.html">Preferences & Alerts</a></li>
+                <li><a href="/templates/last-location.html">Last Known Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page">
+            <h2>Welcome, Praveen!</h2>
+            <div class="health-stats">
+                <h3>Driver's Health Overview</h3>
+                
+                <!-- Health Chart -->
+                <div class="health-chart">
+                    <canvas id="healthChart"></canvas>
+                </div>
+
+                <!-- Temperature -->
+                <div class="health-metric">
+                    <h4>Temperature</h4>
+                    <p><span id="temperatureValue">98.6°F</span></p>
+                    <div class="temperature-chart">
+                        <canvas id="temperatureChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Pulse Rate -->
+                <div class="health-metric">
+                    <h4>Pulse Rate</h4>
+                    <p><span id="pulseRateValue">75 BPM</span></p>
+                    <div class="pulse-rate-chart">
+                        <canvas id="pulseRateChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Air Quality Index -->
+                <div class="health-metric">
+                    <h4>Air Quality Index</h4>
+                    <p><span id="airQualityIndexValue">Good</span></p>
+                    <div class="air-quality-chart">
+                        <canvas id="airQualityChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <p>Current Location:</p>
+                    <p><span>Near Poonamraja College of Engineering</span></p>
+                </div>
+                
+                <div class="health-tips">
+                    <h4>Health Tips:</h4>
+                    <ul>
+                        <li>Stay hydrated: Drink water regularly, especially during long drives.</li>
+                        <li>Take breaks: Stop every couple of hours to stretch and move around.</li>
+                        <li>Monitor your heart rate: Aim for a heart rate between 60 and 100 BPM.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Driver Health Monitoring System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
