@@ -58,7 +58,20 @@
                         <canvas id="airQualityChart"></canvas>
                     </div>
                 </div>
-
+                <h2>Health Prediction App</h2>
+    
+                <!-- Form to select a row for prediction -->
+                <form action="/predict" method="post">
+                    <label for="row_index">Select Row from CSV:</label>
+                    <input type="number" name="row_index" min="0" max="100" required><br><br>
+                    <!-- Adjust max value based on the number of rows in your CSV -->
+            
+                    <button type="submit">Predict</button>
+                </form>
+            
+                <!-- Display the prediction result -->
+                <h3>{{ prediction_text }}</h3>
+                
                 <div class="map">
                     <p>Current Location:</p>
                     <p><span>Near Poonamraja College of Engineering</span></p>

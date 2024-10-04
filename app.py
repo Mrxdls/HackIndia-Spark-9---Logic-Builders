@@ -5,12 +5,12 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load your trained model
-model_path = '/mnt/data/health_model.pkl'
+model_path = 'health_model.pkl'
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
 # Load CSV data
-csv_file_path = '/mnt/data/driver_health_with_aqi.csv'
+csv_file_path = 'driver_health_with_aqi.csv'
 data = pd.read_csv(csv_file_path)
 
 @app.route('/')
